@@ -1,0 +1,26 @@
+{
+  "name": "discord-bot-chat-log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korakrit-c/discord-bot-chat-log.git"
+  },
+  "author": "korakrit-c",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/korakrit-c/discord-bot-chat-log/issues"
+  },
+  "homepage": "https://github.com/korakrit-c/discord-bot-chat-log#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0"
+  }
+}
