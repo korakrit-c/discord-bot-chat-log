@@ -28,8 +28,6 @@ PREFIX=!
 ```sh
 node .
 ```
-
-## Usage
 ```
 Discord.js v13.1.0
 Logged in as Demo Bot#0305!
