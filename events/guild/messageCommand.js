@@ -9,7 +9,14 @@ module.exports = {
 
         const args = message.content.slice(prefix.length).split(/ +/);
         const cmd = args.shift().toLowerCase();
-
         const command = message.client.commands.get(cmd);
+
+        try {
+            command.execute(message, args);
+        } catch (error) {
+            message.reply("There was an error");
+            console.log(error);
+        }
+        
     }
 }
