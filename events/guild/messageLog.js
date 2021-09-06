@@ -1,5 +1,5 @@
 const execute = async (message) => {
-    if (message.author.bot) return;
+    if (message.author.bot || message.channel.type === "DM") return;
     
     // Guild Info
     const guildId = message.guildId;

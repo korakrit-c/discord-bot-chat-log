@@ -3,8 +3,7 @@ const fs = require("fs");
 require("dotenv").config();
 
 const client = new Discord.Client({
-    intents:
-        [
+    intents: [
             Discord.Intents.FLAGS.GUILDS,
             Discord.Intents.FLAGS.GUILD_MEMBERS,
             Discord.Intents.FLAGS.GUILD_VOICE_STATES,
@@ -12,7 +11,10 @@ const client = new Discord.Client({
             Discord.Intents.FLAGS.DIRECT_MESSAGES,
             Discord.Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
             Discord.Intents.FLAGS.DIRECT_MESSAGE_TYPING
-        ]
+    ],
+    partials: [
+        "CHANNEL"
+    ]
 });
 
 client.commands = new Discord.Collection();
